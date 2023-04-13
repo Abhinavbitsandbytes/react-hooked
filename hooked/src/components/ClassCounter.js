@@ -7,6 +7,13 @@ class ClassCounter extends Component {
             count: 0
         }
     }
+    componentDidMount(){
+        document.title = `clicked ${this.state.count} times`
+    }
+    componentDidUpdate(){
+        document.title = `clicked ${this.state.count} times`
+
+    }
     incrementCount = () =>{
         this.setState({
             count: this.state.count+1
